@@ -5,8 +5,6 @@ import React from 'react';
 
 const Navbar = () => {
     const pathname = usePathname()
-    console.log(pathname.includes('dashboard'));
-    console.log(pathname);
 
     if (!pathname.includes('/dashboard')) {
         return <nav>
