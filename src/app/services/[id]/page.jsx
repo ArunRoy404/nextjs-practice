@@ -2,7 +2,7 @@ import ServiceCard from '@/app/components/ServiceCard';
 import { servicesData } from '@/app/utilities/servicesData';
 import React from 'react';
 
-const page = ({ params }) => {
+const ServiceDetailsPage = ({ params }) => {
     const id = parseInt(params.id)
     const service = servicesData.filter(data => data.id === id)
 
@@ -17,4 +17,4 @@ const page = ({ params }) => {
     );
 };
 
-export default page;
+export default ServiceDetailsPage;

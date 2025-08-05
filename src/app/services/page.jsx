@@ -2,7 +2,7 @@ import React from 'react';
 import { servicesData } from '../utilities/servicesData';
 import ServiceCard from '../components/ServiceCard';
 
-const page = () => {
+const ServicesPage = () => {
 
     return (
         <div>
@@ -16,4 +16,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default ServicesPage;
