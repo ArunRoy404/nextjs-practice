@@ -15,6 +15,10 @@ const user = {
 
 export function middleware(request) {
 
+    const cookie = request.cookies.get('next-cookie')
+    console.log(cookie);
+
+
     let isAdminDashboardPage = request.nextUrl.pathname.includes('/admin-dashboard')
     let isAdmin = user.role === 'admin'
     console.log(isAdmin, isAdminDashboardPage);
